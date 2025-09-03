@@ -1,0 +1,59 @@
+.bottom-nav-inline {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-radius: 12px;
+  margin-top: 24px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}
+
+.nav-icon {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-icon.active {
+  color: #F6c948;
+}
+
+.nav-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+/* Optional utility class for SVG sizing */
+.icon-34 {
+  width: 34px;
+  height: 34px;
+}
+
+/* Cart badge styling */
+.cart-wrapper {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 0.65rem;
+  border-radius: 50%;
+  padding: 2px 6px;
+  min-width: 20px;
+  text-align: center;
+  line-height: 1.2;
+}

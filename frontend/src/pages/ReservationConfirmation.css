@@ -1,0 +1,212 @@
+/* ============================================================
+   Reservation Confirmation Page Styles
+============================================================ */
+.reservation-confirmation-page {
+  padding: 20px;
+  background: linear-gradient(135deg, #FFF8E1 0%, #FFFDE7 100%);
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.confirmation-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  color: #333;
+}
+
+.back-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Confirmation Illustration */
+.confirmation-illustration {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-image {
+  width: 280px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+/* Success Section */
+.success-section {
+  text-align: center;
+  margin: 20px 0 40px;
+  max-width: 300px;
+}
+
+.success-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FF8F00;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.success-message {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Quick Details */
+.quick-details {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 80px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.detail-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.detail-icon {
+  font-size: 24px;
+  color: #FF8F00;
+}
+
+.detail-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin: 30px 0;
+}
+
+.view-reservation-btn {
+  background: #FFB300;
+  color: #fff;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 179, 0, 0.3);
+}
+
+.view-reservation-btn:hover {
+  background: #FF8F00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 179, 0, 0.4);
+}
+
+.back-home-btn {
+  background: transparent;
+  color: #666;
+  border: 2px solid #e0e0e0;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-home-btn:hover {
+  border-color: #FF8F00;
+  color: #FF8F00;
+  background: rgba(255, 143, 0, 0.05);
+}
+
+/* Additional Info */
+.additional-info {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 280px;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reservation-confirmation-page {
+    padding: 16px;
+  }
+
+  .reservation-image {
+    width: 180px;
+    height: 140px;
+  }
+
+  .success-title {
+    font-size: 20px;
+  }
+
+  .success-message {
+    font-size: 14px;
+  }
+
+  .quick-details {
+    gap: 12px;
+  }
+
+  .detail-item {
+    min-width: 70px;
+    padding: 12px;
+  }
+
+  .action-buttons {
+    max-width: 280px;
+  }
+
+  .view-reservation-btn,
+  .back-home-btn {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+}

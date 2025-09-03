@@ -1,0 +1,192 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the auth card */
+.auth-container {
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Auth card styling */
+.auth-card {
+  background: #fff;
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header with straight bottom */
+.auth-header {
+  background: #FFD369;
+  padding: 40px 0 60px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Logo inside header */
+.auth-header img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Form styling */
+.auth-form {
+  padding: 30px 20px;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 24px;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #F9C93D;
+}
+
+/* Forgot password */
+.forgot {
+  text-align: right;
+  font-size: 13px;
+  color: #555;
+  margin: 5px 0 15px 0;
+  cursor: pointer;
+}
+
+/* Login button - fixed color */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #FFD369 !important; /* override Bootstrap */
+  color: #000 !important;         /* override Bootstrap */
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #FFD369 !important;
+}
+
+/* Google button */
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Signup link */
+.signup {
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+}
+
+.signup a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Alert messages */
+.auth-alert {
+  margin: 15px 20px;
+  font-size: 14px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .auth-container {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .auth-header {
+    padding: 30px 0 50px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .auth-header img {
+    max-width: 140px;
+  }
+
+  .auth-form h2 {
+    font-size: 20px;
+  }
+
+  input.form-control {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .login-btn,
+  .google-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup {
+    font-size: 12px;
+  }
+}

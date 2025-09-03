@@ -1,0 +1,247 @@
+/* ============================= */
+/* Reservation Form Layout       */
+/* ============================= */
+.reservation-form-container {
+  max-width: 500px;
+  margin: 24px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.reservation-form-container:hover {
+  transform: translateY(-5px);
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================= */
+/* Horizontal Table Card List    */
+/* ============================= */
+.table-list-horizontal {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.table-list-horizontal::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================= */
+/* Table Card - Wider Size       */
+/* ============================= */
+.table-card-visual {
+  flex: 0 0 300px;
+  max-width: 300px;
+  height: 180px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+}
+
+.table-card-visual.selected {
+  border-color: #FFD369;
+  box-shadow: 0 4px 12px rgba(255, 211, 105, 0.4);
+}
+
+.table-card-visual.available:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #e9ecef;
+}
+
+/* ============================= */
+/* Table Icon / Cross Shape      */
+/* ============================= */
+.table-icon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #e9ecef;
+  border-radius: 12px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-icon::before,
+.table-icon::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.table-icon::before {
+  width: 120px;
+  height: 30px;
+  top: 45px;
+  left: 0;
+}
+
+.table-icon::after {
+  width: 30px;
+  height: 120px;
+  top: 0;
+  left: 45px;
+}
+
+/* ============================= */
+/* Table Center Block - Enlarged */
+/* ============================= */
+.table-center {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 70px;
+  height: 70px;
+  background: #FFC107;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-center .capacity {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: normal;
+}
+
+/* ============================= */
+/* Status Badge - Below Icon     */
+/* ============================= */
+.table-status {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.status-badge.available {
+  background-color: #eaf7ed;
+  color: #28a745;
+}
+
+.status-badge.reserved {
+  background-color: #fff3cd;
+  color: #ffc107;
+}
+
+.status-badge.occupied {
+  background-color: #fcebeb;
+  color: #dc3545;
+}
+
+.status-badge.booked {
+  background-color: #ffe8d4;
+  color: #ff9800;
+}
+
+/* ============================= */
+/* Form Controls                 */
+/* ============================= */
+.form-label {
+  font-weight: 600;
+  color: #444;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+.input-group-text {
+  background: #f1f3f5;
+  color: #666;
+  border-radius: 8px 0 0 8px;
+}
+
+/* ============================= */
+/* Buttons - Consistent Yellow   */
+/* ============================= */
+.btn-custom {
+  background-color: #FFD369 !important;
+  border: none !important;
+  color: #333 !important;
+  font-weight: bold !important;
+  padding: 12px 20px !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #e6c35a !important;
+  color: #000 !important;
+}
+
+/* ============================= */
+/* Responsive                    */
+/* ============================= */
+@media (max-width: 576px) {
+  .table-card-visual {
+    flex: 0 0 280px;
+    max-width: 280px;
+    height: 180px;
+  }
+
+  .table-center {
+    top: 20px;
+    left: 20px;
+    width: 65px;
+    height: 65px;
+    font-size: 16px;
+  }
+
+  .table-center .capacity {
+    font-size: 12px;
+  }
+}

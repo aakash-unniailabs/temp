@@ -1,0 +1,366 @@
+/*Global Container (Aligned with BottomNav)*/
+.page-container {
+  padding: 24px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding-bottom: 80px; /* BottomNav ke liye space */
+  max-width: 480px;      /* BottomNav ke width ke saath match */
+  margin: 0 auto;        /* Center horizontally */
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.page-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/*Header & Navigation*/
+.confirmation-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.back-btn {
+  background: #f1f3f5;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #e9ecef;
+  transform: scale(1.05);
+}
+
+/* 
+   Success Section */
+.success-section {
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 28px 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  font-size: 50px;
+  margin-bottom: 14px;
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.success-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  font-size: 15px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/*
+   Customer Info
+ */
+.customer-info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.customer-label {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.customer-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}
+
+/* 
+   Order Details*/
+.order-details-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.order-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.order-info-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.estimated-time {
+  color: #ff6b35;
+}
+
+/* 
+   Order Summary */
+.order-summary-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 16px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f3f5;
+  transition: background 0.2s ease;
+}
+
+.order-item:hover {
+  background: #f8f9fa;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.item-quantity {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}
+
+/* 
+   Bill Breakdown
+ */
+.bill-breakdown {
+  border-top: 1px solid #e9ecef;
+  padding-top: 16px;
+}
+
+.bill-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.bill-label {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.bill-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.total-row {
+  border-top: 1px solid #e9ecef;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.total-row .bill-label,
+.total-row .bill-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* 
+   Payment Method */
+.payment-method-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+}
+
+.payment-type {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}
+
+/* 
+   Order Status Tags */
+.order-status.confirmed {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.order-status.preparing {
+  color: #fd7e14;
+  font-weight: 600;
+}
+
+.order-status.delivered {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+/* 
+   Rating Section
+*/
+.rating-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  opacity: 0.4;
+}
+
+.star-btn.active {
+  opacity: 1;
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+.star-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* 
+   Buttons
+ */
+.contact-support-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  color: #212529;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-support-btn:hover {
+  background: linear-gradient(135deg, #ffb300, #ff8f00);
+  transform: translateY(-2px);
+}
+
+/* 
+   Responsive Design */
+@media (max-width: 576px) {
+  .page-container {
+    padding: 16px;
+    margin: 20px auto;
+  }
+
+  .order-info-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .order-info-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rating-stars {
+    gap: 8px;
+  }
+
+  .contact-support-btn {
+    font-size: 15px;
+    padding: 14px;
+  }
+}

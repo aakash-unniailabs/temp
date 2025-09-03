@@ -1,0 +1,180 @@
+/* ProtectedCheckout.css */
+.protected-checkout-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.checkout-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.checkout-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.checkout-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.checkout-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.auth-wrapper {
+  margin-bottom: 24px;
+}
+
+.checkout-benefits {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 24px;
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 20px;
+  display: block;
+}
+
+/* Modal overlay styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .protected-checkout-container {
+    padding: 20px;
+    margin: 16px;
+  }
+  
+  .checkout-title {
+    font-size: 20px;
+  }
+  
+  .checkout-subtitle {
+    font-size: 14px;
+  }
+  
+  .checkout-benefits {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .benefit-item {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+/* Success state styles */
+.checkout-success {
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.checkout-success h3 {
+  color: #059669;
+  margin-bottom: 16px;
+}
+
+.checkout-success .user-info {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.checkout-success .user-name {
+  font-weight: 600;
+  color: #065f46;
+}
+
+.confirm-order-btn {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.confirm-order-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.confirm-order-btn:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn-secondary:hover {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+}
